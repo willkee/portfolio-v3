@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -23,7 +23,7 @@ const Navbar = () => {
 					<img
 						src={logo}
 						alt="logo"
-						className="w-12 h-12 object-contain m-0"
+						className="w-12 h-12 object-contain mr-2"
 					/>
 					<p className="text-white text-[18px] font-bold cursor-pointer flex">
 						Will &nbsp;
