@@ -1,8 +1,5 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -13,29 +10,30 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import python from "./tech/python.svg";
+import flask from "./tech/flask.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import etana from "./company/etana.png";
+import geeksquad from "./company/geeksquad.svg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import campbnb from "./projects/campbnb.png";
+import findtable from "./projects/findtable.png";
+
+import globe from "./globe.svg";
+
+import js3d from "./3d/javascript.png";
+import react3d from "./3d/react.png";
+import node_3d from "./3d/nodejs.png";
+import python3d from "./3d/python.png";
 
 export {
 	logo,
 	backend,
-	creator,
-	mobile,
-	web,
 	github,
 	menu,
 	close,
@@ -45,18 +43,20 @@ export {
 	git,
 	html,
 	javascript,
-	mongodb,
 	nodejs,
 	reactjs,
 	redux,
 	tailwind,
 	typescript,
-	threejs,
-	meta,
-	shopify,
-	starbucks,
-	tesla,
-	carrent,
-	jobit,
-	tripguide,
+	campbnb,
+	findtable,
+	etana,
+	geeksquad,
+	globe,
+	python,
+	flask,
+	js3d,
+	react3d,
+	node_3d,
+	python3d,
 };

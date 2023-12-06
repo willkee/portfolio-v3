@@ -1,8 +1,4 @@
 import {
-	mobile,
-	backend,
-	creator,
-	web,
 	javascript,
 	typescript,
 	html,
@@ -11,18 +7,19 @@ import {
 	redux,
 	tailwind,
 	nodejs,
-	mongodb,
 	git,
 	figma,
 	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
-	carrent,
-	jobit,
-	tripguide,
-	threejs,
+	python,
+	flask,
+	campbnb,
+	findtable,
+	etana,
+	geeksquad,
+	js3d,
+	react3d,
+	node_3d,
+	python3d,
 } from "../assets";
 
 export const navLinks = [
@@ -42,224 +39,135 @@ export const navLinks = [
 
 const services = [
 	{
-		title: "Web Developer",
-		icon: web,
+		title: "React Developer",
+		icon: react3d,
 	},
 	{
-		title: "React Native Developer",
-		icon: mobile,
+		title: "JavaScript Developer",
+		icon: js3d,
 	},
 	{
-		title: "Backend Developer",
-		icon: backend,
+		title: "NodeJS Developer",
+		icon: node_3d,
 	},
 	{
-		title: "Content Creator",
-		icon: creator,
+		title: "Python Developer",
+		icon: python3d,
 	},
 ];
 
 const technologies = [
-	{
-		name: "HTML 5",
-		icon: html,
-	},
-	{
-		name: "CSS 3",
-		icon: css,
-	},
-	{
-		name: "JavaScript",
-		icon: javascript,
-	},
-	{
-		name: "TypeScript",
-		icon: typescript,
-	},
-	{
-		name: "React JS",
-		icon: reactjs,
-	},
-	{
-		name: "Redux Toolkit",
-		icon: redux,
-	},
-	{
-		name: "Tailwind CSS",
-		icon: tailwind,
-	},
-	{
-		name: "Node JS",
-		icon: nodejs,
-	},
-	{
-		name: "MongoDB",
-		icon: mongodb,
-	},
-	{
-		name: "Three JS",
-		icon: threejs,
-	},
-	{
-		name: "git",
-		icon: git,
-	},
-	{
-		name: "figma",
-		icon: figma,
-	},
-	{
-		name: "docker",
-		icon: docker,
-	},
+	{ name: "JavaScript", icon: javascript },
+	{ name: "TypeScript", icon: typescript },
+	{ name: "React JS", icon: reactjs },
+	{ name: "Redux", icon: redux },
+	{ name: "Tailwind CSS", icon: tailwind },
+	{ name: "Node JS", icon: nodejs },
+	{ name: "Python", icon: python },
+	{ name: "Flask", icon: flask },
+	{ name: "HTML 5", icon: html },
+	{ name: "CSS 3", icon: css },
+	{ name: "docker", icon: docker },
+	{ name: "git", icon: git },
+	{ name: "figma", icon: figma },
 ];
 
 const experiences = [
 	{
-		title: "React.js Developer",
-		company_name: "Starbucks",
-		icon: starbucks,
-		iconBg: "#383E56",
-		date: "March 2020 - April 2021",
+		title: "Software Developer",
+		company_name: "Etana Custody",
+		icon: etana,
+		iconBg: "#000",
+		date: "Dec 2022 - May 2023",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"Spearheaded major refactoring of frontend Etana Digital service (internal tool), enhancing user-friendliness and navigation using JavaScript, React.js/Redux, HTML/CSS, and Material UI resulting in a 10% increase in user productivity.",
+			"Maximized code readability with reusable components while reducing development time for new projects by 40%.",
+			"Collaborated with the back-end team to integrate user-facing elements with server-side logic.",
 		],
 	},
 	{
-		title: "React Native Developer",
-		company_name: "Tesla",
-		icon: tesla,
-		iconBg: "#E6DEDD",
-		date: "Jan 2021 - Feb 2022",
+		title: "Home Theater Agent",
+		company_name: "Best Buy Geek Squad",
+		icon: geeksquad,
+		iconBg: "#d1d1d1",
+		date: "Nov 2020 - Nov 2022",
 		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
+			"Collaborated with fellow agents through Microsoft Teams to assist with safely moving heavy electronic equipment within customers' homes for a 50% more efficient workflow and to reduce customer wait times.",
+			"Mobilized with a large team to coordinate logistical challenges and safely transport sensitive electronic equipment.",
+			"Initiated effective communication with customers to provide a positive service experience while navigating to ambiguous locations with minimal or outdated Google Maps data.",
 		],
-	},
-	{
-		title: "Web Developer",
-		company_name: "Shopify",
-		icon: shopify,
-		iconBg: "#383E56",
-		date: "Jan 2022 - Jan 2023",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-	{
-		title: "Full stack Developer",
-		company_name: "Meta",
-		icon: meta,
-		iconBg: "#E6DEDD",
-		date: "Jan 2023 - Present",
-		points: [
-			"Developing and maintaining web applications using React.js and other related technologies.",
-			"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-			"Implementing responsive design and ensuring cross-browser compatibility.",
-			"Participating in code reviews and providing constructive feedback to other developers.",
-		],
-	},
-];
-
-const testimonials = [
-	{
-		testimonial:
-			"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-		name: "Sara Lee",
-		designation: "CFO",
-		company: "Acme Co",
-		image: "https://randomuser.me/api/portraits/women/4.jpg",
-	},
-	{
-		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: "Chris Brown",
-		designation: "COO",
-		company: "DEF Corp",
-		image: "https://randomuser.me/api/portraits/men/5.jpg",
-	},
-	{
-		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: "Lisa Wang",
-		designation: "CTO",
-		company: "456 Enterprises",
-		image: "https://randomuser.me/api/portraits/women/6.jpg",
 	},
 ];
 
 const projects = [
 	{
-		name: "Car Rent",
+		name: "CampBnB",
 		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+			"Web-based platform inspired by airBnB that allows users to search, book, and manage camp spot bookings within Colorado. Site owners can add new camp sites and list a photo and location that can be view on a map.",
+		tags: [
+			{
+				name: "js",
+				color: "yellow-text-gradient",
+			},
+			{
+				name: "react",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "node",
+				color: "green-text-gradient",
+			},
+			{
+				name: "aws",
+				color: "text-yellow-500",
+			},
+			{
+				name: "postgres",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "html/css",
+				color: "text-gray-300",
+			},
+		],
+		image: campbnb,
+		repo_link: "https://github.com/willkee/CampBnB",
+		live_link: "https://aa-campbnb.herokuapp.com/",
+	},
+	{
+		name: "FindTable",
+		description:
+			"Web application inspired by OpenTable that allows users to search, book, and manage reservations at restaurants in the New York metropolitan area. Restaurant owners can add their establishment and list a photo and location.",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
+				name: "python",
 				color: "green-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "flask",
 				color: "pink-text-gradient",
 			},
-		],
-		image: carrent,
-		source_code_link: "https://github.com/",
-	},
-	{
-		name: "Job IT",
-		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-		tags: [
 			{
-				name: "react",
-				color: "blue-text-gradient",
+				name: "docker",
+				color: "text-yellow-500",
 			},
 			{
-				name: "restapi",
-				color: "green-text-gradient",
-			},
-			{
-				name: "scss",
+				name: "postgres",
 				color: "pink-text-gradient",
 			},
-		],
-		image: jobit,
-		source_code_link: "https://github.com/",
-	},
-	{
-		name: "Trip Guide",
-		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-		tags: [
 			{
-				name: "nextjs",
-				color: "blue-text-gradient",
-			},
-			{
-				name: "supabase",
-				color: "green-text-gradient",
-			},
-			{
-				name: "css",
-				color: "pink-text-gradient",
+				name: "html/css",
+				color: "text-gray-300",
 			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image: findtable,
+		repo_link: "https://github.com/willkee/FindTable",
+		live_link: "https://find-table.herokuapp.com/",
 	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
