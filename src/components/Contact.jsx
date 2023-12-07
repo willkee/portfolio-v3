@@ -13,9 +13,9 @@ const Contact = () => {
 
 	const [loading, setLoading] = useState(false);
 
-	const service = import.meta.env.EMAILJS_SERVICE;
-	const template = import.meta.env.EMAILJS_TEMPLATE;
-	const key = import.meta.env.EMAILJS_PUBLIC_KEY;
+	const service = import.meta.env.VITE_EMAILJS_SERVICE;
+	const template = import.meta.env.VITE_EMAILJS_TEMPLATE;
+	const key = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
