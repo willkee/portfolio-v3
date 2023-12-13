@@ -20,6 +20,10 @@ import {
 	react3d,
 	node_3d,
 	python3d,
+	github,
+	linkedin,
+	email,
+	resume,
 } from "../assets";
 
 export const navLinks = [
@@ -34,6 +38,36 @@ export const navLinks = [
 	{
 		id: "contact",
 		title: "Contact",
+	},
+];
+function onDownload() {
+	const link = document.createElement("a");
+	link.download = `will_kee_resume_${new Date().getTime()}.pdf`;
+	link.href = "/will_kee_resume.pdf";
+	link.click();
+}
+
+export const contactLinks = [
+	{
+		name: "github",
+		src: github,
+		url: () => window.open("https://www.github.com/willkee", "_blank"),
+	},
+	{
+		name: "linkedin",
+		src: linkedin,
+		url: () =>
+			window.open("https://www.linkedin.com/in/will-kee/", "_blank"),
+	},
+	{
+		name: "email",
+		src: email,
+		url: () => window.open("mailto:will.kee.dev@gmail.com", "_blank"),
+	},
+	{
+		name: "resume",
+		src: resume,
+		url: onDownload,
 	},
 ];
 

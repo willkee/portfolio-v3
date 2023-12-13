@@ -1,6 +1,11 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
+
 import github from "./github.png";
+import linkedin from "./linkedin.svg";
+import email from "./envelope.svg";
+import resume from "./file-pdf.svg";
+
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -35,6 +40,9 @@ export {
 	logo,
 	backend,
 	github,
+	linkedin,
+	email,
+	resume,
 	menu,
 	close,
 	css,
