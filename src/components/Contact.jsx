@@ -61,11 +61,41 @@ const Contact = () => {
 			<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
 				<motion.div
 					variants={slideIn("left", "tween", 0.2, 1)}
-					className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+					className="flex-[0.75] bg-black-100 p-8 rounded-2xl min-w-[300px]"
 				>
-					<p className={styles.sectionSubText}>Get in touch</p>
-					<h3 className={styles.sectionHeadText}>Contact.</h3>
-					<form
+					<p className={styles.sectionSubText}>Contact</p>
+					<h3 className={`${styles.sectionHeadText}`}>Links.</h3>
+					<div className=" bg-black-100 rounded-2xl w-full flex justify-evenly items-center h-24 mt-10">
+						{contactLinks.slice(0, 2).map(({ name, src, url }) => (
+							<div
+								key={name}
+								className="hover:opacity-100 rounded-full w-12 h-12 opacity-30 cursor-pointer items-center flex justify-center"
+								onClick={url}
+							>
+								<img
+									src={src}
+									alt={name}
+									className="w-12 h-12"
+								/>
+							</div>
+						))}
+					</div>
+					<div className=" bg-black-100 rounded-2xl w-full flex justify-evenly items-center h-24">
+						{contactLinks.slice(2).map(({ name, src, url }) => (
+							<div
+								key={name}
+								className="hover:opacity-100 rounded-full w-12 h-12 opacity-30 cursor-pointer items-center flex justify-center"
+								onClick={url}
+							>
+								<img
+									src={src}
+									alt={name}
+									className="w-12 h-12"
+								/>
+							</div>
+						))}
+					</div>
+					{/* <form
 						ref={formRef}
 						onSubmit={handleSubmit}
 						className="mt-12 flex flex-col gap-8"
@@ -115,7 +145,7 @@ const Contact = () => {
 						>
 							{loading ? "Sending..." : "Send"}
 						</button>
-					</form>
+					</form> */}
 				</motion.div>
 				<motion.div
 					variants={slideIn("right", "tween", 0.2, 1)}
@@ -124,7 +154,7 @@ const Contact = () => {
 					<EarthCanvas />
 				</motion.div>
 			</div>
-			<div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden text-white mt-10">
+			{/* <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden text-white mt-10">
 				<motion.div
 					variants={slideIn("up", "tween", 0.2, 1)}
 					className=" bg-black-100 p-8 rounded-2xl w-full flex justify-evenly items-center"
@@ -139,7 +169,7 @@ const Contact = () => {
 						</div>
 					))}
 				</motion.div>
-			</div>
+			</div> */}
 		</>
 	);
 };
